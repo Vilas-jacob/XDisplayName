@@ -9,7 +9,12 @@ function App() {
 
   function handleSumbit(e){
     e.preventDefault();
-    setFullName(`${firstName} ${lastName}`);
+    if(firstName.trim() && lastName.trim()){
+      setFullName(`${firstName} ${lastName}`);
+    } else {
+      setFullName("");
+    }
+    
   }
   return (
     <>
