@@ -37,9 +37,9 @@ function App() {
        </div>
       </form>
     
-       <div>
+      
        {fullName && <h3>Full Name: {fullName}</h3>} 
-       </div>
+     
       
     </>
   )
